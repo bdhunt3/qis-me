@@ -1,4 +1,2 @@
 qiskit~=0.19.2
-matplotlib
-jupyter
 art~=4.7

@@ -1,0 +1,51 @@
+#  The Player's <Bra|Ket>
+This is a project designed to show the accessibility and application that quantum computers will have in everyday life.
+The Player's BraKet is a set of virtual Dungeons and Dragons dice. Unlike other virtual dice sets, the BraKet is powered
+by a real quantum computer in the IBM network. It uses a simple algorithm to generate truly random numbers. 
+I will be updating the BraKet as I move forward. In the coming few weeks expect to see improved error handling and 
+upgraded customizability. My first goal will be to toggle the flavortext and create a repository of cached random
+numbers. My goal for the original BraKet was to create a somewhat petty dice roller for the pedant player who demands 
+truly random numbers in his tabletop game.  While true to style, this creates a somewhat impractical roller. For 
+quickest rolling use the default backend. Currently, the BraKet uses no pseudorandom number generation for dice rolls. 
+In the future, an option to use stored random numbers will be made available.
+
+## Installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install  the requirements as found in requirements.txt
+
+```bash
+pip install -r requirements.txt
+```
+
+
+In addition to package requirements, to run the BraKet you will need an operable IBMQ account.
+Please follow these [instructions](https://www.ibm.com/support/pages/create-active-my-ibm-account) from IBM support to 
+create your IBMQ account.
+
+## Using the BraKet
+The BraKet is designed to accept any combination of rolls and dice. Enter your requests in form:
+xdyy, where 'x' is the quantity of requested dice, and 'yy' is the dice type.
+
+Currently d20, d12, d10, d8, d6, and d4 dice are supported.
+
+To request a combination of dice enter the dice as: 'xdyy+ndmm+...+'
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Upcoming
+<ul>
+<li>Improved error handling</li>
+<li>Toggled flavortext</li>
+<li>Cached random numbers </li>
+</ul>
+
+
+
+## License
+Copyright 2020 B.D.H
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
