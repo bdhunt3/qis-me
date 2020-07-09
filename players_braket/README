@@ -22,10 +22,14 @@ Please follow these [instructions](https://www.ibm.com/support/pages/create-acti
 create your IBMQ account.
 
 ## Using the BraKet
-To run the BraKet change into the players_braket directory and enter:
+To run the BraKet, first ensure that you are using your appropriate qiskit envionrment. If you have not installed qiskit, please see follow these [instructions](https://qiskit.org/documentation/install.html).
+Once qiskit is operational, change into the players_braket directory and enter:
+
 ```bash
 python main.py
 ```
+This will start the Player's BraKet program.
+
 The BraKet is designed to accept any combination of rolls and dice. Enter your requests in form:
 xdyy, where 'x' is the quantity of requested dice, and 'yy' is the dice type.
 
